@@ -1,0 +1,13 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "electron ."
+  },
+  "dependencies": {
+    "electron": "^29.3.0",
+    "tailwindcss": "^3.4.3"
+  }
+}

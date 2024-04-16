@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bloco de Notas em Electron</title>
+    <!-- Inclua o arquivo CSS do Tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Inclua o seu arquivo CSS personalizado -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-200 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md w-96">
+      <h1 class="text-2xl font-bold mb-4">Bloco de Notas</h1>
+      <textarea
+        id="texto"
+        class="w-full h-32 p-2 border border-gray-300 rounded-md mb-4"
+        placeholder="Digite aqui..."
+      ></textarea>
+      <button
+        id="salvarBtn"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Salvar
+      </button>
+      <div id="textoSalvo" class="mt-4 hidden">
+        <h2 class="text-lg font-bold">Textos Salvos:</h2>
+        <ul id="listaTextos" class="mt-2"></ul>
+      </div>
+    </div>
+    <!-- Inclua o arquivo JavaScript do Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+    <!-- Inclua o seu arquivo JavaScript personalizado -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
